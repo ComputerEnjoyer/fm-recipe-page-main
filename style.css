@@ -24,6 +24,10 @@ main {
   background-color: var(--color-white);
 }
 
+h1 {
+  visibility: hidden;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -93,11 +97,8 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-h3 {
-  color: var(--color-brown-800);
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
+p.article-summary {
+  margin-bottom: 2rem;
 }
 
 aside {
@@ -105,6 +106,13 @@ aside {
   border-radius: 1rem;
   padding: 1.5rem;
   margin-bottom: 2rem;
+}
+
+h3 {
+  color: var(--color-brown-800);
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 aside h3,
@@ -128,6 +136,9 @@ header {
   grid-column: full-width;
 }
 
+h2,
+p.article-summary,
+aside,
 section,
 hr {
   grid-column: content;
@@ -186,8 +197,12 @@ hr {
   article {
     padding: 2.5rem;
   }
+
+  h2,
+  p.article-summary,
+  aside,
   section,
-  h3 {
+  hr {
     grid-column: full-width;
   }
   header {
